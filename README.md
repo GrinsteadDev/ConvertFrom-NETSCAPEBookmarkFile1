@@ -1,5 +1,5 @@
 # ConvertFrom-NETSCAPEBookmarkFile1
-PowerShell cmdlet designed to convert a Netscape bookmark file into a hashtable
+PowerShell cmdlet designed to parse a Netscape bookmark file into a hashtable
 
 ## Description
     The ConvertFrom-NETSCAPEBookmarkFile1 function converts a provided 
