@@ -1,7 +1,7 @@
 . ".\main.ps1"
 $Bookmarks = Get-Content ".\favorite*" | ConvertFrom-NETSCAPEBookmarkFile1
 
-Write-Host $Bookmarks | ConvertTo-Json -Dept 5
+Write-Host ($Bookmarks | ConvertTo-Json -Dept 5)
 
 <#
   Expected Output
