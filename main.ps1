@@ -29,7 +29,7 @@ function ConvertFrom-NETSCAPEBookmarkFile1 {
 
     process
     {
-        if($path -ne '') { return (Get-Content -Path $path | ConvertFrom-BOOKMARKFILE1) }
+        if($path -ne '') { return (Get-Content -Path $path | ConvertFrom-NETSCAPEBookmarkFile1) }
         if([bool]($input -match $h)) {
             $out.Add('doctype', 'NETSCAPE-Bookmark-file-1')
         }
