@@ -17,7 +17,7 @@ function ConvertFrom-NETSCAPEBookmarkFile1 {
         [string] $t = '(?<=(<[t|T][i|I][t|T][l|L][e|E]>)).*(?=(<\/[t|T][i|I][t|T][l|L][e|E]>))'
         [string] $m = '(?<=(<[m|M][e|E][t|T][a|A]>?))[^>]*'
         #group 1 is TagName, group 2 is Attribute Data, group 3 is innerText + preciding '>'
-        [string] $tag = '(?<=<)([a-z|A-Z|0-9|\-|_]*(?=\s|>))([^>]*)([^<]*)(?=[\s|\S]*<\/\1>)|<\/DL>'
+        [string] $tag = '(?<=<)([a-z|A-Z|0-9|\-|_]*(?=\s|>))([^>]*)([^<]*)(?=[\s|\S]*<\/\1>)|<\/[d|D][l|L]>'
         [string] $vals = '\\"|"(?:\\"|[^"])*"'
         [string] $keys = '(?<=\s)[a-z|A-Z|0-9|\-|_]*\s?(?==\s?(\\"|"(?:\\"|[^"])*"))'
         [hashtable] $out = @{ children = [System.Collections.ArrayList]@() }
